@@ -25,7 +25,16 @@
     transform: translateY(-6px);
     color: #FB8C00;
     
-} */
+}
+ */
+
+
+.circle-active {
+    -webkit-box-shadow: 0 0 90px #FB8C00;
+    box-shadow: 0 0 90px #FB8C00;
+    transform: translateY(-6px);
+    color: #FB8C00;
+}
 
 /* Tailwind */
 /* shadow-2xl text-orange-500 transform -translate-y-1.5 */

@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import "tailwindcss/tailwind.css";
 
-const CircleImage = ({ imageSrc, active, onClick }) => (
+const CircleImage = ({ imageSrc, active, onClick }) => {
+  
+  console.log(imageSrc)
+  console.log(active)
+  
+  return (
     <div onClick={onClick} className="circle">
-      <img src={imageSrc} alt="circle" className="circle-image"/>{active}
+      <img src={imageSrc} alt="circle" className={active? "circle-image circle-active": "circle-image"}/>
     </div>
-  );
+  )};
 
 const CircleGlowComponent = () => {
   const [activeCircle, setActiveCircle] = useState(0);
@@ -19,7 +24,7 @@ const CircleGlowComponent = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-gray-600">
     
-        <div className="flex justify-center space-x-10">
+        <div className="flex justify-center space-x-10 ">
           {circles.map(({ id, imageSrc }) => (
             <CircleImage
               key={id}
