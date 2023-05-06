@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    -webkit-transition: 200ms ease-out;
+    -o-transition: 200ms ease-out;
+    transition: 200ms ease-out;
+    -webkit-box-shadow: 0 0 15px #FB8C00;
+    box-shadow: 0 0 15px #FB8C00;
+}
+
+/* Tailwind */
+/* w-50 h-50 rounded-full cursor-pointer border-none transition duration-200 ease-out shadow-custom-orange */
+
+/* .circle-image:hover, .circle-image:focus {
+    -webkit-box-shadow: 0 0 90px #FB8C00;
+    box-shadow: 0 0 90px #FB8C00;
+    transform: translateY(-6px);
+    color: #FB8C00;
+    
+} */
+
+/* Tailwind */
+/* shadow-2xl text-orange-500 transform -translate-y-1.5 */
